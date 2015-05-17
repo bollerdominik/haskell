@@ -1,0 +1,24 @@
+//Attempt to create a simple cabal installation, however I could not get the program to compile with GHCi
+
+name:                HaskellAssignment
+version:             0.0.1.0   
+cabal-version:       >= 1.16						
+
+executable main
+  main-is:             TemperatureReader.hs
+  other-modules:       HtmlServer Parser
+  default-language:    Haskell2010  
+  build-depends:       base,
+                       text,
+                       happstack-server,
+                       aeson,
+                       blaze-html,
+                       blaze-markup,
+                       time,
+                       old-locale,
+                       http-conduit,
+                       acid-state,
+                       safecopy,
+                       mtl,
+                       resourcet
+
